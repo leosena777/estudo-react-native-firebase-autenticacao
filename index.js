@@ -8,14 +8,14 @@ import { name as appName } from './app.json';
 class App extends Component {
   componentWillMount() {
     const firebaseConfig = {
-      apiKey: 'AIzaSyBl3uclQl7Hm5vFrE332msUYQbHQQ48-zI',
-      authDomain: 'projeto-teste-reactnative.firebaseapp.com',
-      databaseURL: 'https://projeto-teste-reactnative.firebaseio.com',
-      projectId: 'projeto-teste-reactnative',
-      storageBucket: 'projeto-teste-reactnative.appspot.com',
-      messagingSenderId: '1028732368439',
-      appId: '1:1028732368439:web:85e864c3b3e8779f'
+      apiKey: '<API_KEY>',
+      authDomain: '<PROJECT_ID>.firebaseapp.com',
+      databaseURL: 'https://<DATABASE_NAME>.firebaseio.com',
+      projectId: '<PROJECT_ID>',
+      storageBucket: '<BUCKET>.appspot.com',
+      messagingSenderId: '<SENDER_ID>'
     };
+
     firebase.initializeApp(firebaseConfig);
 
     firebase.auth().onAuthStateChanged((usuarioAtual) => {
